@@ -1,0 +1,7 @@
+:root {
+  --bs-font-sans-serif: Inter;
+}
+
+body {
+  background-color: var(--bs-tertiary-bg);
+}

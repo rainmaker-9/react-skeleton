@@ -6,10 +6,12 @@ const routes = [
   {
     path: "/",
     element: <Home />,
+    isIndex: true,
   },
   {
     path: "*",
     element: <NotFound />,
+    isIndex: false,
   },
 ];
 

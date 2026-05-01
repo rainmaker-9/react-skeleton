@@ -6,8 +6,13 @@ function App() {
   return (
     <Router>
       <Routes>
-        {routes.map(({ path, element }, idx) => (
-          <Route key={idx} path={path} element={element} />
+        {routes.map((route, idx) => (
+          <Route
+            key={idx}
+            path={route.path}
+            element={route.element}
+            index={route.isIndex}
+          />
         ))}
       </Routes>
     </Router>
